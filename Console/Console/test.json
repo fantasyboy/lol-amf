@@ -1,0 +1,150 @@
+time: 1476690367 {
+   "data" : {
+      "body" : "success",
+      "headers" : {
+         "DSId" : "1B379B56-5D18-16F6-5D60-6FBB10DB1625",
+         "DSMessagingVersion" : 1
+      },
+      "timeStamp" : 1476171445016
+   },
+   "invokeId" : 6,
+   "result" : "_result",
+   "serviceCall" : "null"
+}
+
+time: 1476690536 {
+   "data" : {
+      "body" : "success",
+      "headers" : {
+         "DSId" : "1B379B56-5D18-16F6-5D60-6FBB10DB1625",
+         "DSMessagingVersion" : 1
+      },
+      "timeStamp" : 1476171445016
+   },
+   "invokeId" : 6,
+   "result" : "_result",
+   "serviceCall" : "null"
+}
+
+time: 1476756702 {
+   "data" : {
+      "body" : {
+         "ghostGameS√mmoners" : null,
+         "joinedQueues" : {
+            "com.riotgames.platform.matchmaking.QueueInfo" : {
+               "queueLength" : 3043,
+               "queue√d" : 2,
+               "waitTime" : 33513
+            }
+         },
+         "playerJoinFailures" : "null"
+      },
+      "timeStamp" : 1476756070784
+   },
+   "invokeId" : 30,
+   "result" : 3.6331325279060624e-273,
+   "serviceCall" : "null"
+}
+
+time: 1476758313 {
+   "data" : {
+      "body" : {
+         "banOrder" : 10,
+         "bannedChampions" : "null",
+         "data√ersion" : null,
+         "expiryTime" : 3,
+         "featuredGameInfo" : 0,
+         "futureData" : "null",
+         "gameMode" : "SNG76OarlDgbgFMF",
+         "gameMutators" : "CLASSIC",
+         "gameState" : 1,
+         "gameTypeConfigId" : "NORMAL_GAME",
+         "g√meStateString" : 0,
+         "joinTimerDuration" : 0,
+         "mapId" : "null",
+         "maxNumPlayers" : "NORMAL",
+         "name" : null,
+         "observers" : "CHAMP_SELECT",
+         "optimis√icLock" : "null",
+         "ownerSummary" : "null",
+         "passbackDataPacket" : 11,
+         "passbackUrl" : null,
+         "passwordSet" : false,
+         "pickTurn" : "NOT_TERMINATED",
+         "playerChampionSelections" : "null",
+         "practiceGameRewardsDisabledReasons" : null,
+         "queuePosition" : {
+            "championVoteInfoList" : null,
+            "data√ersion" : 0
+         },
+         "queueTypeName" : "",
+         "spectatorsAllowed" : "NONE",
+         "statusOfParticipants" : null,
+         "teamOne" : 0,
+         "teamOnePickOutcome" : "NOT_TERMINATED",
+         "teamTwo" : "null",
+         "teamTwoPickOutcome" : 3521823788,
+         "terminatedCondition" : "GvB0MAmcA?exuA5hTzW4aIvK+joJ0y0E@sec",
+         "terminatedConditionString" : "null"
+      },
+      "clientId" : null,
+      "headers" : "CHAMP_SELECT",
+      "messageId" : 1,
+      "timeStamp" : null
+   },
+   "invokeId" : "null",
+   "result" : 8.5013612118606725e-273,
+   "serviceCall" : "null"
+}
+
+time: 1476758479 {
+   "data" : {
+      "body" : {
+         "banOrder" : 10,
+         "bannedChampions" : "null",
+         "data√ersion" : null,
+         "expiryTime" : 3,
+         "featuredGameInfo" : 0,
+         "futureData" : "null",
+         "gameMode" : "SNG76OarlDgbgFMF",
+         "gameMutators" : "CLASSIC",
+         "gameState" : 1,
+         "gameTypeConfigId" : "NORMAL_GAME",
+         "g√meStateString" : 0,
+         "joinTimerDuration" : 0,
+         "mapId" : "null",
+         "maxNumPlayers" : "NORMAL",
+         "name" : null,
+         "observers" : "CHAMP_SELECT",
+         "optimis√icLock" : "null",
+         "ownerSummary" : "null",
+         "passbackDataPacket" : 11,
+         "passbackUrl" : null,
+         "passwordSet" : false,
+         "pickTurn" : "NOT_TERMINATED",
+         "playerChampionSelections" : "null",
+         "practiceGameRewardsDisabledReasons" : null,
+         "queuePosition" : {
+            "championVoteInfoList" : null,
+            "data√ersion" : 0
+         },
+         "queueTypeName" : "",
+         "spectatorsAllowed" : "NONE",
+         "statusOfParticipants" : null,
+         "teamOne" : 0,
+         "teamOnePickOutcome" : "NOT_TERMINATED",
+         "teamTwo" : "null",
+         "teamTwoPickOutcome" : 3521823788,
+         "terminatedCondition" : "GvB0MAmcA?exuA5hTzW4aIvK+joJ0y0E@sec",
+         "terminatedConditionString" : "null"
+      },
+      "clientId" : null,
+      "headers" : "CHAMP_SELECT",
+      "messageId" : 1,
+      "timeStamp" : null
+   },
+   "invokeId" : "null",
+   "result" : 8.5013612118606725e-273,
+   "serviceCall" : "null"
+}
+
