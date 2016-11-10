@@ -23,9 +23,104 @@ std::mutex role::m_mutex;
 std::list<std::shared_ptr<DATA_PROPERTY>> role::m_pDataList;
 role g_role;
 Json::Value ObjectConvert2Json(std::shared_ptr<Amf_Object> obj);
-//Json::Value ObjectConvert2Json(Amf_object obj);
+Json::Value Amf3Convert2Json(std::shared_ptr<Amf_Object> obj);
+Json::Value Amf0Convert2Json(std::shared_ptr<Amf_Object> obj);
 
+Json::Value ObjectConvert2Json(std::shared_ptr<Amf_Object> obj)
+{
 
+	Json::Value root;
+	try{
+		for (auto iter = obj->result.begin(); iter != obj->result.end(); iter++)
+		{
+			if (iter->second->amfType == TYPE_AMF0)
+			{
+				root[iter->first] = Amf0Convert2Json(iter->second);
+			}
+			else
+			{
+				root[iter->first] = Amf3Convert2Json(iter->second);
+			}
+		}
+
+	}
+	catch (...)
+	{
+		tools::getInstance()->message("出现异常！\n");
+		return nullptr;
+	}
+	return root;
+}
+Json::Value Amf3Convert2Json(std::shared_ptr<Amf_Object> obj)
+{
+	Json::Value root;
+	//判断类型
+	switch (obj->type)
+	{
+	case AMF3_UNDEFINED: break;
+	case AMF3_NULL: root = "null"; break;
+	case AMF3_FALSE: root = false; break;
+	case AMF3_TRUE:  root = true; break;
+	case AMF3_INTEGER: root = obj->_value._int; break;
+	case AMF3_DOUBLE: root = obj->_value._double; break;
+	case AMF3_STRING:root = obj->text; break;
+	case AMF3_XMLDOCUMENT: break;
+	case AMF3_DATE: root = obj->_value._double; break;
+	case AMF3_ARRAY:
+	{
+					   Json::Value aa;
+					   for (auto iter : obj->temp)
+					   {
+						   aa.append(Amf3Convert2Json(iter));
+					   }
+					   root = aa;
+					   break;
+	}
+	case AMF3_OBJECT:
+	{
+						Json::Value aa;
+						for (auto iter = obj->result.begin(); iter != obj->result.end(); iter++)
+						{
+							aa[iter->first] = Amf3Convert2Json(iter->second);
+						}
+						root[obj->name] = aa;
+						break;
+	}
+	case AMF3_XML: break;
+	case AMF3_BYTEARRAY:
+	{
+						   for (auto iter : obj->temp)
+						   {
+							   root.append(Amf3Convert2Json(iter));
+						   }
+						   break;
+	}
+	default:
+		break;
+	}
+	return root;
+}
+Json::Value Amf0Convert2Json(std::shared_ptr<Amf_Object> obj){
+
+	Json::Value root;
+	//判断类型
+	switch (obj->type)
+	{
+	case AMF0_NUMBER: root = obj->_value._double; break;
+	case AMF0_STRING: root = obj->text; break;
+	case AMF0_OBJECT:  {
+						   for (auto iter = obj->result.begin(); iter != obj->result.end(); iter++)
+						   {
+							   root[iter->first] = Amf0Convert2Json(iter->second);
+						   }
+						   break;
+	}
+	case AMF0_NULL:root = "null"; break;
+	default:
+		break;
+	}
+	return root;
+}
 
 void threadCallbackFunc()
 {
@@ -343,101 +438,7 @@ void __stdcall unsealmessage_del(unsigned long _data)
 	}
 }
 
-Json::Value ObjectConvert2Json(std::shared_ptr<Amf_Object> obj)
-{
-	Json::Value root;
 
-
-	if (obj->result.empty())
-	{
-		return root;
-	}
-
-	std::map<std::string, std::shared_ptr<Amf_Object>>::const_iterator iter;
-	for (iter = obj->result.begin(); iter != obj->result.end(); iter++)
-	{
-		//std::cout << "key: " << iter->first << " ";
-		if (iter->second.get()->amfType == TYPE_AMF0)
-		{
-			//AFM0
-			switch (iter->second.get()->type)
-			{
-			case 0:
-				//std::cout << "value: " << iter->second.get()->_value._double;
-				root[iter->first] = iter->second.get()->_value._double;
-				break;
-			case 2:
-				//value = obj.text;
-				//std::cout << "value: " << iter->second.get()->text;
-				root[iter->first] = iter->second.get()->text;
-				break;
-			case 3:
-				//return false;
-				root[iter->first] = ObjectConvert2Json(iter->second);
-				break;
-			case 5:
-				root[iter->first] = "null";
-				break;
-
-			default:
-				//调用到这，说明是对象
-				break;
-			}
-		}
-		else if (iter->second.get()->amfType == TYPE_AMF3)
-		{
-
-			switch (iter->second.get()->type)
-			{
-			case 1:
-				root[iter->first] = "null";
-				break;
-			case 2:
-			{
-					  // bool b = false;
-					  // std::cout << "value: " << iter->second.get()->_value._bool;
-					  root[iter->first] = iter->second.get()->_value._bool;
-					  break;
-			}
-			case 3:
-			{
-					  // std::cout << "value: " << iter->second.get()->_value._bool;
-					  root[iter->first] = iter->second.get()->_value._bool;
-					  break;
-			}
-			case 4:
-				//std::cout << "value: " << iter->second.get()->_value._int;
-				root[iter->first] = iter->second.get()->_value._int;
-				break;
-			case 5:
-				//std::cout << "value: " << iter->second.get()->_value._double;
-				root[iter->first] = iter->second.get()->_value._double;
-				break;
-			case 6:
-				//std::cout << "value: " << Utf8ToAnsi(iter->second.get()->text);
-				root[iter->first] = Utf8ToAnsi(iter->second.get()->text);
-				break;
-			case 8:
-				//std::cout << "value: " << Utf8ToAnsi(iter->second.get()->text);
-				root[iter->first] = Utf8ToAnsi(iter->second.get()->text);
-				break;
-			case 10:
-				root[iter->first] = ObjectConvert2Json(iter->second);
-				break;
-			default:
-				//return "";
-				break;
-
-			}
-		}
-		else
-		{
-			root[iter->first] = ObjectConvert2Json(iter->second);
-		}
-	}
-
-	return root;
-}
 
 
 //Json::Value ObjectConvert2Json(Amf_object obj)

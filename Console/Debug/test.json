@@ -1,0 +1,458 @@
+time: 1478695861 {
+   "data" : {
+      "" : {
+         "body" : [
+            {
+               "com.riotgames.platform.matchmaking.GameQueueConfig" : {
+                  "blockedMinutesThreshold" : 60,
+                  "botsCanSpawnOnBlueSide" : true,
+                  "cacheName" : "matching-queue-NORMAL-5x5-game-queue",
+                  "dataVersion" : 0,
+                  "disallowFreeChampions" : false,
+                  "futureData" : "null",
+                  "gameMode" : "CLASSIC",
+                  "gameMutators" : [ "NewSummonerBadgeSystem(0)", "StarGuardianMinions" ],
+                  "gameTypeConfigId" : 1,
+                  "id" : 2,
+                  "mapSelectionAlgorithm" : "FIRST",
+                  "matchingThrottleConfig" : {
+                     "com.riotgames.platform.matchmaking.MatchingThrottleConfig" : {
+                        "cacheName" : "",
+                        "dataVersion" : 0,
+                        "futureData" : "null",
+                        "limit" : 2147483647,
+                        "matchingThrottleProperties" : null
+                     }
+                  },
+                  "maxLevel" : 100,
+                  "maxSummonerLevelForFirstWinOfTheDay" : 100,
+                  "maximumParticipantListSize" : 5,
+                  "minLevel" : 3,
+                  "minimumParticipantListSize" : 1,
+                  "minimumQueueDodgeDelayTime" : 8000,
+                  "numPlayersPerTeam" : 5,
+                  "pointsConfigKey" : "normalSummonersRift",
+                  "queueBonusKey" : "normalQueueBonuses",
+                  "queueState" : "ON",
+                  "queueStateString" : "ON",
+                  "randomizeTeamSides" : true,
+                  "ranked" : false,
+                  "supportedMapIds" : [ 11 ],
+                  "teamOnly" : false,
+                  "thresholdEnabled" : false,
+                  "thresholdSize" : 2147483647,
+                  "type" : "NORMAL",
+                  "typeString" : "NORMAL"
+               }
+            },
+            {
+               "com.riotgames.platform.matchmaking.GameQueueConfig" : {
+                  "blockedMinutesThreshold" : 65,
+                  "botsCanSpawnOnBlueSide" : true,
+                  "cacheName" : "matching-queue-TEAM_BUILDER_DRAFT_UNRANKED-5x5-game-queue",
+                  "dataVersion" : 0,
+                  "disallowFreeChampions" : false,
+                  "futureData" : "null",
+                  "gameMode" : "CLASSIC",
+                  "gameMutators" : [ "NewSummonerBadgeSystem(0)" ],
+                  "gameTypeConfigId" : 18,
+                  "id" : 400,
+                  "mapSelectionAlgorithm" : "LAST",
+                  "matchingThrottleConfig" : {
+                     "com.riotgames.platform.matchmaking.MatchingThrottleConfig" : {
+                        "cacheName" : "",
+                        "dataVersion" : 0,
+                        "futureData" : "null",
+                        "limit" : 2147483647,
+                        "matchingThrottleProperties" : null
+                     }
+                  },
+                  "maxLevel" : 100,
+                  "maxSummonerLevelForFirstWinOfTheDay" : 100,
+                  "maximumParticipantListSize" : 5,
+                  "minLevel" : 20,
+                  "minimumParticipantListSize" : 5,
+                  "minimumQueueDodgeDelayTime" : 8000,
+                  "numPlayersPerTeam" : 5,
+                  "pointsConfigKey" : "normalSummonersRift",
+                  "queueBonusKey" : "normalQueueBonuses",
+                  "queueState" : "ON",
+                  "queueStateString" : "ON",
+                  "randomizeTeamSides" : true,
+                  "ranked" : false,
+                  "supportedMapIds" : [ 11 ],
+                  "teamOnly" : false,
+                  "thresholdEnabled" : false,
+                  "thresholdSize" : 2147483647,
+                  "type" : "NORMAL",
+                  "typeString" : "NORMAL"
+               }
+            },
+            {
+               "com.riotgames.platform.matchmaking.GameQueueConfig" : {
+                  "blockedMinutesThreshold" : 50,
+                  "botsCanSpawnOnBlueSide" : true,
+                  "cacheName" : "matching-queue-NORMAL-3x3-game-queue",
+                  "dataVersion" : 0,
+                  "disallowFreeChampions" : false,
+                  "futureData" : "null",
+                  "gameMode" : "CLASSIC",
+                  "gameMutators" : [ "NewSummonerBadgeSystem(0)" ],
+                  "gameTypeConfigId" : 1,
+                  "id" : 8,
+                  "mapSelectionAlgorithm" : "FIRST",
+                  "matchingThrottleConfig" : {
+                     "com.riotgames.platform.matchmaking.MatchingThrottleConfig" : {
+                        "cacheName" : "",
+                        "dataVersion" : 0,
+                        "futureData" : "null",
+                        "limit" : 2147483647,
+                        "matchingThrottleProperties" : null
+                     }
+                  },
+                  "maxLevel" : 100,
+                  "maxSummonerLevelForFirstWinOfTheDay" : 100,
+                  "maximumParticipantListSize" : 3,
+                  "minLevel" : 7,
+                  "minimumParticipantListSize" : 1,
+                  "minimumQueueDodgeDelayTime" : 8000,
+                  "numPlayersPerTeam" : 3,
+                  "pointsConfigKey" : "normalTwistedTreeLine",
+                  "queueBonusKey" : "normalQueueBonuses",
+                  "queueState" : "ON",
+                  "queueStateString" : "ON",
+                  "randomizeTeamSides" : true,
+                  "ranked" : false,
+                  "supportedMapIds" : [ 10, 4 ],
+                  "teamOnly" : false,
+                  "thresholdEnabled" : false,
+                  "thresholdSize" : 2147483647,
+                  "type" : "NORMAL_3x3",
+                  "typeString" : "NORMAL_3x3"
+               }
+            },
+            {
+               "com.riotgames.platform.matchmaking.GameQueueConfig" : {
+                  "blockedMinutesThreshold" : 75,
+                  "botsCanSpawnOnBlueSide" : true,
+                  "cacheName" : "matching-queue-TEAM_BUILDER_DRAFT_RANKED-5x5-game-queue",
+                  "dataVersion" : 0,
+                  "disallowFreeChampions" : true,
+                  "futureData" : "null",
+                  "gameMode" : "CLASSIC",
+                  "gameMutators" : [ "NewSummonerBadgeSystem(0)" ],
+                  "gameTypeConfigId" : 18,
+                  "id" : 410,
+                  "mapSelectionAlgorithm" : "LAST",
+                  "matchingThrottleConfig" : {
+                     "com.riotgames.platform.matchmaking.MatchingThrottleConfig" : {
+                        "cacheName" : "",
+                        "dataVersion" : 0,
+                        "futureData" : "null",
+                        "limit" : 2147483647,
+                        "matchingThrottleProperties" : null
+                     }
+                  },
+                  "maxLevel" : 100,
+                  "maxSummonerLevelForFirstWinOfTheDay" : 100,
+                  "maximumParticipantListSize" : 5,
+                  "minLevel" : 30,
+                  "minimumParticipantListSize" : 5,
+                  "minimumQueueDodgeDelayTime" : 8000,
+                  "numPlayersPerTeam" : 5,
+                  "pointsConfigKey" : "rankedSummonersRift",
+                  "queueBonusKey" : "normalQueueBonuses",
+                  "queueState" : "ON",
+                  "queueStateString" : "ON",
+                  "randomizeTeamSides" : true,
+                  "ranked" : true,
+                  "supportedMapIds" : [ 11 ],
+                  "teamOnly" : false,
+                  "thresholdEnabled" : false,
+                  "thresholdSize" : 2147483647,
+                  "type" : "RANKED_SOLO_5x5",
+                  "typeString" : "RANKED_SOLO_5x5"
+               }
+            },
+            {
+               "com.riotgames.platform.matchmaking.GameQueueConfig" : {
+                  "blockedMinutesThreshold" : 60,
+                  "botsCanSpawnOnBlueSide" : false,
+                  "cacheName" : "matching-queue-BOT_INTRO-5x5-game-queue",
+                  "dataVersion" : 0,
+                  "disallowFreeChampions" : false,
+                  "futureData" : "null",
+                  "gameMode" : "CLASSIC",
+                  "gameMutators" : [
+                     "OnboardCoopBeginner",
+                     "LearningQuests",
+                     "FireIceFinisher",
+                     "IconBasedEmotes",
+                     "NewSummonerBadgeSystem(0)"
+                  ],
+                  "gameTypeConfigId" : 1,
+                  "id" : 31,
+                  "mapSelectionAlgorithm" : "FIRST",
+                  "matchingThrottleConfig" : {
+                     "com.riotgames.platform.matchmaking.MatchingThrottleConfig" : {
+                        "cacheName" : "",
+                        "dataVersion" : 0,
+                        "futureData" : "null",
+                        "limit" : 2147483647,
+                        "matchingThrottleProperties" : null
+                     }
+                  },
+                  "maxLevel" : 30,
+                  "maxSummonerLevelForFirstWinOfTheDay" : 9,
+                  "maximumParticipantListSize" : 5,
+                  "minLevel" : 0,
+                  "minimumParticipantListSize" : 1,
+                  "minimumQueueDodgeDelayTime" : 8000,
+                  "numPlayersPerTeam" : 5,
+                  "pointsConfigKey" : "coOpVsAiSummonersRift",
+                  "queueBonusKey" : "matchedBotsQueueBonuses",
+                  "queueState" : "ON",
+                  "queueStateString" : "ON",
+                  "randomizeTeamSides" : true,
+                  "ranked" : false,
+                  "supportedMapIds" : [ 11 ],
+                  "teamOnly" : false,
+                  "thresholdEnabled" : false,
+                  "thresholdSize" : 2147483647,
+                  "type" : "BOT",
+                  "typeString" : "BOT"
+               }
+            },
+            {
+               "com.riotgames.platform.matchmaking.GameQueueConfig" : {
+                  "blockedMinutesThreshold" : 60,
+                  "botsCanSpawnOnBlueSide" : false,
+                  "cacheName" : "matching-queue-BOT_EASY-5x5-game-queue",
+                  "dataVersion" : 0,
+                  "disallowFreeChampions" : false,
+                  "futureData" : "null",
+                  "gameMode" : "CLASSIC",
+                  "gameMutators" : [
+                     "AdvancedLearningQuests",
+                     "FireIceFinisher",
+                     "IconBasedEmotes",
+                     "NewSummonerBadgeSystem(0)"
+                  ],
+                  "gameTypeConfigId" : 1,
+                  "id" : 32,
+                  "mapSelectionAlgorithm" : "FIRST",
+                  "matchingThrottleConfig" : {
+                     "com.riotgames.platform.matchmaking.MatchingThrottleConfig" : {
+                        "cacheName" : "",
+                        "dataVersion" : 0,
+                        "futureData" : "null",
+                        "limit" : 2147483647,
+                        "matchingThrottleProperties" : null
+                     }
+                  },
+                  "maxLevel" : 30,
+                  "maxSummonerLevelForFirstWinOfTheDay" : 100,
+                  "maximumParticipantListSize" : 5,
+                  "minLevel" : 0,
+                  "minimumParticipantListSize" : 1,
+                  "minimumQueueDodgeDelayTime" : 8000,
+                  "numPlayersPerTeam" : 5,
+                  "pointsConfigKey" : "coOpVsAiSummonersRift",
+                  "queueBonusKey" : "matchedBotsQueueBonuses",
+                  "queueState" : "ON",
+                  "queueStateString" : "ON",
+                  "randomizeTeamSides" : true,
+                  "ranked" : false,
+                  "supportedMapIds" : [ 11 ],
+                  "teamOnly" : false,
+                  "thresholdEnabled" : false,
+                  "thresholdSize" : 2147483647,
+                  "type" : "BOT",
+                  "typeString" : "BOT"
+               }
+            },
+            {
+               "com.riotgames.platform.matchmaking.GameQueueConfig" : {
+                  "blockedMinutesThreshold" : 60,
+                  "botsCanSpawnOnBlueSide" : true,
+                  "cacheName" : "matching-queue-BOT_MEDIUM-5x5-game-queue",
+                  "dataVersion" : 0,
+                  "disallowFreeChampions" : false,
+                  "futureData" : "null",
+                  "gameMode" : "CLASSIC",
+                  "gameMutators" : [
+                     "AdvancedLearningQuests",
+                     "FireIceFinisher",
+                     "IconBasedEmotes",
+                     "NewSummonerBadgeSystem(0)"
+                  ],
+                  "gameTypeConfigId" : 1,
+                  "id" : 33,
+                  "mapSelectionAlgorithm" : "FIRST",
+                  "matchingThrottleConfig" : {
+                     "com.riotgames.platform.matchmaking.MatchingThrottleConfig" : {
+                        "cacheName" : "",
+                        "dataVersion" : 0,
+                        "futureData" : "null",
+                        "limit" : 2147483647,
+                        "matchingThrottleProperties" : null
+                     }
+                  },
+                  "maxLevel" : 30,
+                  "maxSummonerLevelForFirstWinOfTheDay" : 100,
+                  "maximumParticipantListSize" : 5,
+                  "minLevel" : 0,
+                  "minimumParticipantListSize" : 1,
+                  "minimumQueueDodgeDelayTime" : 8000,
+                  "numPlayersPerTeam" : 5,
+                  "pointsConfigKey" : "coOpVsAiSummonersRift",
+                  "queueBonusKey" : "matchedBotsQueueBonuses",
+                  "queueState" : "ON",
+                  "queueStateString" : "ON",
+                  "randomizeTeamSides" : true,
+                  "ranked" : false,
+                  "supportedMapIds" : [ 11 ],
+                  "teamOnly" : false,
+                  "thresholdEnabled" : false,
+                  "thresholdSize" : 2147483647,
+                  "type" : "BOT",
+                  "typeString" : "BOT"
+               }
+            },
+            {
+               "com.riotgames.platform.matchmaking.GameQueueConfig" : {
+                  "blockedMinutesThreshold" : 75,
+                  "botsCanSpawnOnBlueSide" : true,
+                  "cacheName" : "matching-queue-RANKED_TEAM-3x3-game-queue",
+                  "dataVersion" : 0,
+                  "disallowFreeChampions" : false,
+                  "futureData" : "null",
+                  "gameMode" : "CLASSIC",
+                  "gameMutators" : [ "NewSummonerBadgeSystem(0)" ],
+                  "gameTypeConfigId" : 2,
+                  "id" : 41,
+                  "mapSelectionAlgorithm" : "FIRST",
+                  "matchingThrottleConfig" : {
+                     "com.riotgames.platform.matchmaking.MatchingThrottleConfig" : {
+                        "cacheName" : "",
+                        "dataVersion" : 0,
+                        "futureData" : "null",
+                        "limit" : 2147483647,
+                        "matchingThrottleProperties" : null
+                     }
+                  },
+                  "maxLevel" : 100,
+                  "maxSummonerLevelForFirstWinOfTheDay" : 100,
+                  "maximumParticipantListSize" : 3,
+                  "minLevel" : 30,
+                  "minimumParticipantListSize" : 3,
+                  "minimumQueueDodgeDelayTime" : 8000,
+                  "numPlayersPerTeam" : 3,
+                  "pointsConfigKey" : "rankedTwistedTreeLine",
+                  "queueBonusKey" : "normalQueueBonuses",
+                  "queueState" : "ON",
+                  "queueStateString" : "ON",
+                  "randomizeTeamSides" : true,
+                  "ranked" : true,
+                  "supportedMapIds" : [ 10, 4 ],
+                  "teamOnly" : true,
+                  "thresholdEnabled" : false,
+                  "thresholdSize" : 2147483647,
+                  "type" : "RANKED_TEAM_3x3",
+                  "typeString" : "RANKED_TEAM_3x3"
+               }
+            },
+            {
+               "com.riotgames.platform.matchmaking.GameQueueConfig" : {
+                  "blockedMinutesThreshold" : 75,
+                  "botsCanSpawnOnBlueSide" : true,
+                  "cacheName" : "matching-queue-RANKED_TEAM-5x5-game-queue",
+                  "dataVersion" : 0,
+                  "disallowFreeChampions" : false,
+                  "futureData" : "null",
+                  "gameMode" : "CLASSIC",
+                  "gameMutators" : [ "NewSummonerBadgeSystem(0)" ],
+                  "gameTypeConfigId" : 2,
+                  "id" : 42,
+                  "mapSelectionAlgorithm" : "FIRST",
+                  "matchingThrottleConfig" : {
+                     "com.riotgames.platform.matchmaking.MatchingThrottleConfig" : {
+                        "cacheName" : "",
+                        "dataVersion" : 0,
+                        "futureData" : "null",
+                        "limit" : 2147483647,
+                        "matchingThrottleProperties" : null
+                     }
+                  },
+                  "maxLevel" : 100,
+                  "maxSummonerLevelForFirstWinOfTheDay" : 100,
+                  "maximumParticipantListSize" : 5,
+                  "minLevel" : 30,
+                  "minimumParticipantListSize" : 5,
+                  "minimumQueueDodgeDelayTime" : 8000,
+                  "numPlayersPerTeam" : 5,
+                  "pointsConfigKey" : "rankedSummonersRift",
+                  "queueBonusKey" : "normalQueueBonuses",
+                  "queueState" : "ON",
+                  "queueStateString" : "ON",
+                  "randomizeTeamSides" : true,
+                  "ranked" : true,
+                  "supportedMapIds" : [ 11 ],
+                  "teamOnly" : true,
+                  "thresholdEnabled" : false,
+                  "thresholdSize" : 2147483647,
+                  "type" : "RANKED_TEAM_5x5",
+                  "typeString" : "RANKED_TEAM_5x5"
+               }
+            },
+            {
+               "com.riotgames.platform.matchmaking.GameQueueConfig" : {
+                  "blockedMinutesThreshold" : 60,
+                  "botsCanSpawnOnBlueSide" : null,
+                  "cacheName" : "matching-queue-BOT_TT-3x3-game-queue",
+                  "dataVersion" : null,
+                  "disallowFreeChampions" : null,
+                  "futureData" : null,
+                  "gameMode" : null,
+                  "gameMutators" : null,
+                  "gameTypeConfigId" : 1,
+                  "id" : 52,
+                  "mapSelectionAlgorithm" : null,
+                  "matchingThrottleConfig" : null,
+                  "maxLevel" : 100,
+                  "maxSummonerLevelForFirstWinOfTheDay" : null,
+                  "maximumParticipantListSize" : null,
+                  "minLevel" : 5,
+                  "minimumParticipantListSize" : 1,
+                  "minimumQueueDodgeDelayTime" : null,
+                  "numPlayersPerTeam" : null,
+                  "pointsConfigKey" : null,
+                  "queueBonusKey" : null,
+                  "queueState" : "ON",
+                  "queueStateString" : null,
+                  "randomizeTeamSides" : null,
+                  "ranked" : false,
+                  "supportedMapIds" : null,
+                  "teamOnly" : null,
+                  "thresholdEnabled" : false,
+                  "thresholdSize" : null,
+                  "type" : "BOT_3x3",
+                  "typeString" : null
+               }
+            },
+            null
+         ],
+         "clientId" : {
+            "DSK" : null
+         },
+         "messageIdBytes" : {
+            "DSK" : null
+         },
+         "timeStamp" : null
+      }
+   },
+   "invokeId" : 8,
+   "result" : "_result",
+   "serviceCall" : "null"
+}
+

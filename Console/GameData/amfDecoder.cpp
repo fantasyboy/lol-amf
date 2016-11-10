@@ -223,10 +223,12 @@ std::shared_ptr<Amf3_object> amfDecoder::readObject()
 			if (classPtr->type.compare("DSK") == 0)
 			{
 				objPtr = readDSK();
+				objPtr->type = AMF3_OBJECT;
 			}
 			else if (classPtr->type.compare("DSA") == 0)
 			{
 				objPtr = readDSA();
+				objPtr->type = AMF3_OBJECT;
 			}
 			else if (classPtr->type.compare("flex.messaging.io.ArrayCollection") == 0)
 			{
@@ -237,8 +239,9 @@ std::shared_ptr<Amf3_object> amfDecoder::readObject()
 					//ret.result.insert(make_pair(cd.type, temp.childObject[0]));
 					for (int i = 0; i != tempP->temp.size(); i++)
 					{
-						objPtr->result.insert(std::make_pair(tempP->temp[i]->name, tempP->temp[i]));
+						objPtr->temp.push_back(tempP->temp.at(i));
 					}
+					objPtr->type = AMF3_ARRAY;
 				}
 
 			}
@@ -250,6 +253,8 @@ std::shared_ptr<Amf3_object> amfDecoder::readObject()
 				std::string result = std::string((char*)readBytes(size).get(), size);
 				tools::getInstance()->log2file("json.data", result, std::ios::app);
 			}
+
+			return objPtr;
 		}
 		else
 		{
@@ -271,12 +276,14 @@ std::shared_ptr<Amf3_object> amfDecoder::readObject()
 				}
 			}
 		}
+		objPtr->type = AMF3_OBJECT;
 		return objPtr;
 	}
 	else
 	{
 		return objectReferences.at(handle);
 	}
+
 }
 
 std::shared_ptr<Amf3_object> amfDecoder::decode_AMF3()
@@ -347,8 +354,9 @@ std::shared_ptr<Amf3_object> amfDecoder::decode_AMF3()
 	}
 	case 0x0A:
 	{
-				 objPtr = readObject();
 				 objPtr->type = AMF3_OBJECT;
+				 objPtr = readObject();
+				
 				 return objPtr;
 	}
 	case 0x0B:
@@ -510,6 +518,7 @@ std::shared_ptr<Amf_Object> amfDecoder::decode_AMF0()
 	Amf_Object *obj = new Amf_Object;
 	std::shared_ptr<Amf_Object> objPtr;
 	objPtr.reset(obj);
+	objPtr->type = AMF3_OBJECT;
 	switch (type)
 	{
 	case 0x00:
